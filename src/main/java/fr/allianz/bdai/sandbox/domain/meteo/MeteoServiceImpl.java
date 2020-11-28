@@ -20,7 +20,7 @@ public class MeteoServiceImpl implements MeteoService {
             log.info("Current Temperature {}", currentTemperature);
             return currentTemperature;
         } catch (JsonProcessingException e) {
-            log.info("erreur when processing meteo service {}", e);
+            log.error("erreur when processing meteo service {}", e);
         }
         return "default";
     }
