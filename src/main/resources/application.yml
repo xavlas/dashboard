@@ -16,3 +16,5 @@ logging:
       hibernate:
         SQL: debug
 
+meteo:
+  url: "https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=0b545af03efb9154273367ce5a8cf834&units=metric"

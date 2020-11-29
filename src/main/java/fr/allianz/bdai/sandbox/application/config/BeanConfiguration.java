@@ -8,11 +8,13 @@ import fr.allianz.bdai.sandbox.domain.meteo.MeteoServiceImpl;
 import fr.allianz.bdai.sandbox.infrastructure.meteo.MeteoRepository;
 import fr.allianz.bdai.sandbox.infrastructure.meteo.MeteoRepositoryDao;
 import fr.allianz.bdai.sandbox.infrastructure.meteo.MeteoRepositoryImpl;
+import lombok.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class BeanConfiguration {
+
     @Bean
     public BankService bankService(BankDao bankDao) {
         return new BankServiceImpl(bankDao);

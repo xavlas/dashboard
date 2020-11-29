@@ -17,6 +17,7 @@ public class MeteoServiceImpl implements MeteoService {
     public String getCurrentTemperature() {
         try {
             String currentTemperature = this.meteoRepository.getCurrentTemperature();
+            String register = this.meteoRepository.register(currentTemperature);
             log.info("Current Temperature {}", currentTemperature);
             return currentTemperature;
         } catch (JsonProcessingException e) {
